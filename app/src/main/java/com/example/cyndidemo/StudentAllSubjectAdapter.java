@@ -1,6 +1,7 @@
 package com.example.cyndidemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +17,13 @@ import java.util.ArrayList;
 public class StudentAllSubjectAdapter extends RecyclerView.Adapter<StudentAllSubjectAdapter.MyHolder> {
     private ArrayList<StudentSubjectModel> studentSubjectArrayList;
     private Context context;
+    private String nextAct;
+    private String COURSE = "course", ASSIGNMENT = "assignment";
 
-    public StudentAllSubjectAdapter(ArrayList<StudentSubjectModel> studentSubjectArrayList, Context context) {
+    public StudentAllSubjectAdapter(ArrayList<StudentSubjectModel> studentSubjectArrayList, Context context, String nextActivity) {
         this.studentSubjectArrayList = studentSubjectArrayList;
         this.context = context;
+        this.nextAct = nextActivity;
     }
 
     @NonNull
@@ -53,7 +57,19 @@ public class StudentAllSubjectAdapter extends RecyclerView.Adapter<StudentAllSub
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(context, "" + getAdapterPosition(), Toast.LENGTH_SHORT).show();
+                    String subjectName = studentSubjectArrayList.get(getAdapterPosition()).getSubjectName();
+
+                    if (nextAct.equals(COURSE)) {
+                        Intent i = new Intent(context, StudentSubjectCourseContentActivity.class);
+                        i.putExtra("subjectname", subjectName);
+                        context.startActivity(i);
+                    }
+
+                    if (nextAct.equals(ASSIGNMENT)) {
+                        Intent i = new Intent(context, StudentSubjectAssignmentActivity.class);
+                        i.putExtra("subjectname", subjectName);
+                        context.startActivity(i);
+                    }
                 }
             });
         }
