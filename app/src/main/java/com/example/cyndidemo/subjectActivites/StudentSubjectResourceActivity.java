@@ -34,12 +34,12 @@ public class StudentSubjectResourceActivity extends AppCompatActivity {
         studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("Passwords.pdf", "2.6 MB", "PDF", System.currentTimeMillis()));
         studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("Debug.apk", "7.6 MB", "APK", System.currentTimeMillis()));
         studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("Cyndi.apk", "8.0 MB", "APK", System.currentTimeMillis()));
-        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("physics.pdf", "0.4 MB", "PDF", System.currentTimeMillis()));
-        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("ds.xlsx", "0.3 MB", "XLSX", System.currentTimeMillis()));
+        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("Physics.pdf", "0.4 MB", "PDF", System.currentTimeMillis()));
+        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("DS.xlsx", "0.3 MB", "XLSX", System.currentTimeMillis()));
         studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("CN.docx", "0.9 MB", "DOCX", System.currentTimeMillis()));
         studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("OOPS.docx", "2.4 MB", "DOCX", System.currentTimeMillis()));
-        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("dsa.pdf", "3.4 MB", "PDF", System.currentTimeMillis()));
-        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("fb.apk", "90.4 MB", "APK", System.currentTimeMillis()));
+        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("Dsa.pdf", "3.4 MB", "PDF", System.currentTimeMillis()));
+        studentSubjectResourceModelArrayList.add(new StudentSubjectResourceModel("Facebook.apk", "90.4 MB", "APK", System.currentTimeMillis()));
 
         RecyclerView studentSubjectResourceRV = findViewById(R.id.rv_subject_resource_files);
         studentSubjectResourceRV.setLayoutManager(new LinearLayoutManager(this));

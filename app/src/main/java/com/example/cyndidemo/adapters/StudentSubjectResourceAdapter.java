@@ -11,10 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cyndidemo.R;
-import com.example.cyndidemo.model.StudentSubjectModel;
 import com.example.cyndidemo.model.StudentSubjectResourceModel;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -54,7 +52,7 @@ public class StudentSubjectResourceAdapter extends RecyclerView.Adapter<StudentS
         return studentSubjectResourceModelArrayList.size();
     }
 
-    public class MySubjectResourceHolder extends RecyclerView.ViewHolder {
+    public static class MySubjectResourceHolder extends RecyclerView.ViewHolder {
         ImageView fileIconIV;
         TextView fileNameTV, fileTypeTV, fileSizeTV, fileDateTV;
 

@@ -50,7 +50,8 @@ public class StudentAllSubjectAdapter extends RecyclerView.Adapter<StudentAllSub
         cal.setTimeInMillis(time * 1000L);
         String date = DateFormat.format("dd-MM-yyyy hh:mm:ss", cal).toString();
 
-        holder.lastActivityTV.setText("Last Activity - " + date);
+        String textForLastActivity = "Last Activity - " + date;
+        holder.lastActivityTV.setText(textForLastActivity);
 
         if (studentSubjectModel.getThereNewNotification())
             holder.isThereNewNotificationIV.setImageResource(R.drawable.vector_asset_new_notification);
