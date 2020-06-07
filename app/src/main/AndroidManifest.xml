@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudentSubjectAssignmentActivity"></activity>
-        <activity android:name=".StudentSubjectCourseContentActivity" />
-        <activity android:name=".StudentAttendanceReportActivity" />
-        <activity android:name=".StudentAllSubjectListActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".StudentAllSubjectListActivity" />
+        <activity android:name=".StudentEachSubjectActivity" />
+
+        <activity android:name=".subjectActivites.StudentSubjectResourceActivity" />
+        <activity android:name=".subjectActivites.StudentSubjectAssignmentActivity" />
+        <activity android:name=".subjectActivites.StudentSubjectLiveClassActivity" />
+        <activity android:name=".subjectActivites.StudentSubjectClassScheduleActivity" />
+        <activity android:name=".subjectActivites.StudentSubjectAssessmentActivity" />
+    </application>
 </manifest>
