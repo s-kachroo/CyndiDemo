@@ -3,16 +3,25 @@ package com.example.cyndidemo.model;
 import java.util.ArrayList;
 
 public class StudentSubjectModel {
-    private String subjectName, subjectCode, teacherName;
+    private String subjectName, subjectCode, teacherName, tempLastActivity;
     private Boolean isThereNewNotification;
     private Long lastActivity;
 
-    public StudentSubjectModel(String subjectName, String subjectCode, String teacherName, Boolean isThereNewNotification, Long lastActivity) {
+    public StudentSubjectModel(String subjectName, String subjectCode, String teacherName, String tempLastActivity, Boolean isThereNewNotification, Long lastActivity) {
         this.subjectName = subjectName;
         this.subjectCode = subjectCode;
         this.teacherName = teacherName;
+        this.tempLastActivity = tempLastActivity;
         this.isThereNewNotification = isThereNewNotification;
         this.lastActivity = lastActivity;
+    }
+
+    public String getTempLastActivity() {
+        return tempLastActivity;
+    }
+
+    public void setTempLastActivity(String tempLastActivity) {
+        this.tempLastActivity = tempLastActivity;
     }
 
     public String getSubjectName() {

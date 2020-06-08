@@ -43,7 +43,7 @@ public class StudentSubjectAssignmentAdapter extends RecyclerView.Adapter<Studen
         holder.assignmentSubmissionTime.setText(ssam.getAssignmentSubmissionTime());
 
         String dateString = new SimpleDateFormat("MM/dd/yyyy", Locale.US).format(new Date(ssam.getAssignmentPostedTime()));
-        String textForPostedDate = "Posted " + dateString;
+        String textForPostedDate = "Posted " + ssam.getTempPostedTime();
         holder.assignmentPostedTime.setText(textForPostedDate);
 
         if(ssam.getAssignmentCompleted())

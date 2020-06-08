@@ -1,15 +1,24 @@
 package com.example.cyndidemo.model;
 
 public class StudentSubjectAssignmentModel {
-    String assignmentName, assignmentSubmissionTime;
+    String assignmentName, assignmentSubmissionTime, tempPostedTime;
     long assignmentPostedTime;
     Boolean isAssignmentCompleted;
 
-    public StudentSubjectAssignmentModel(String assignmentName, String assignmentSubmissionTime, long assignmentPostedTime, Boolean isAssignmentCompleted) {
+    public StudentSubjectAssignmentModel(String assignmentName, String assignmentSubmissionTime, String tempPostedTime, long assignmentPostedTime, Boolean isAssignmentCompleted) {
         this.assignmentName = assignmentName;
         this.assignmentSubmissionTime = assignmentSubmissionTime;
+        this.tempPostedTime = tempPostedTime;
         this.assignmentPostedTime = assignmentPostedTime;
         this.isAssignmentCompleted = isAssignmentCompleted;
+    }
+
+    public String getTempPostedTime() {
+        return tempPostedTime;
+    }
+
+    public void setTempPostedTime(String tempPostedTime) {
+        this.tempPostedTime = tempPostedTime;
     }
 
     public Boolean getAssignmentCompleted() {

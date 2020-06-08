@@ -44,7 +44,10 @@ public class StudentSubjectResourceAdapter extends RecyclerView.Adapter<StudentS
         holder.fileTypeTV.setText(ssrm.getFileFormat());
 
         String dateString = new SimpleDateFormat("MM/dd/yyyy", Locale.US).format(new Date(ssrm.getFileDate()));
-        holder.fileDateTV.setText(dateString);
+        holder.fileDateTV.setText(ssrm.getTempFileDate());
+
+        if(ssrm.getFileFormat().equals("APK"))
+            holder.fileIconIV.setImageResource(R.drawable.vector_asset_apk);
     }
 
     @Override
