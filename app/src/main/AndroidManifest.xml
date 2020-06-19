@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cyndidemo">
 
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".messagingActivities.ContactListActivity"></activity>
+        <activity android:name=".messagingActivities.ChatActivity" />
+        <activity android:name=".messagingActivities.MessagingLoginActivity" />
+        <activity android:name=".StudentAllSubjectListActivity" />
+        <activity android:name=".StudentEachSubjectActivity" />
+        <activity android:name=".subjectActivities.StudentSubjectResourceActivity" />
+        <activity android:name=".subjectActivities.StudentSubjectAssignmentActivity" />
+        <activity android:name=".subjectActivities.StudentSubjectLiveClassActivity" />
+        <activity android:name=".subjectActivities.StudentSubjectClassScheduleActivity" />
+        <activity android:name=".subjectActivities.StudentSubjectAssessmentActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,14 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".StudentAllSubjectListActivity" />
-        <activity android:name=".StudentEachSubjectActivity" />
-
-        <activity android:name=".subjectActivites.StudentSubjectResourceActivity" />
-        <activity android:name=".subjectActivites.StudentSubjectAssignmentActivity" />
-        <activity android:name=".subjectActivites.StudentSubjectLiveClassActivity" />
-        <activity android:name=".subjectActivites.StudentSubjectClassScheduleActivity" />
-        <activity android:name=".subjectActivites.StudentSubjectAssessmentActivity" />
     </application>
+
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.cyndidemo.subjectActivites;
+package com.example.cyndidemo.subjectActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package com.example.cyndidemo.subjectActivites;
+package com.example.cyndidemo.subjectActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,13 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.cyndidemo.R;
 import com.example.cyndidemo.adapters.StudentSubjectAssignmentAdapter;
-import com.example.cyndidemo.adapters.StudentSubjectResourceAdapter;
 import com.example.cyndidemo.model.StudentSubjectAssignmentModel;
-import com.example.cyndidemo.model.StudentSubjectResourceModel;
 
 import java.util.ArrayList;
 

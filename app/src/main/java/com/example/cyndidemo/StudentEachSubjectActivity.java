@@ -8,11 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.cyndidemo.subjectActivites.StudentSubjectAssessmentActivity;
-import com.example.cyndidemo.subjectActivites.StudentSubjectAssignmentActivity;
-import com.example.cyndidemo.subjectActivites.StudentSubjectClassScheduleActivity;
-import com.example.cyndidemo.subjectActivites.StudentSubjectLiveClassActivity;
-import com.example.cyndidemo.subjectActivites.StudentSubjectResourceActivity;
+import com.example.cyndidemo.subjectActivities.StudentSubjectAssessmentActivity;
+import com.example.cyndidemo.subjectActivities.StudentSubjectAssignmentActivity;
+import com.example.cyndidemo.subjectActivities.StudentSubjectClassScheduleActivity;
+import com.example.cyndidemo.subjectActivities.StudentSubjectLiveClassActivity;
+import com.example.cyndidemo.subjectActivities.StudentSubjectResourceActivity;
 
 public class StudentEachSubjectActivity extends AppCompatActivity {
     private String subjectName;
